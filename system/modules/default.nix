@@ -10,6 +10,6 @@
     ./sound.nix
     ./time.nix
     ./users.nix
-    ./virtualisation.nix
+    ./virtualization.nix
   ];
 }
