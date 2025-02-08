@@ -2,7 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    gnome3.adwaita-icon-theme
+    adwaita-icon-theme
     glib 
     gsettings-desktop-schemas
     nwg-look
