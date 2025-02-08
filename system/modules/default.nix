@@ -4,11 +4,13 @@
   imports = [
     ./fonts.nix
     ./hyprland.nix
+    ./networking.nix
+    ./packages.nix
+    ./polkit.nix
     ./programs.nix
     ./services.nix
-    ./networking.nix
     ./sound.nix
-    ./time.nix
+    ./theme.nix
     ./users.nix
     ./virtualization.nix
   ];
