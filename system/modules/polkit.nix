@@ -24,7 +24,7 @@
       auth include login
     '';
   };
-  
+
   systemd = {
     user.services.polkit-gnome-authentication-agent-1 = {
         description = "polkit-gnome-authentication-agent-1";
@@ -43,9 +43,4 @@
         DefaultTimeoutStopSec=10s
     '';
   };
-
-  environment.systemPackages = with pkgs; [
-    polkit
-    polkit_gnome
-  ];
 }

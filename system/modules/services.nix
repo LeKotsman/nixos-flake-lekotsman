@@ -7,7 +7,11 @@
     openssh.enable = true;
     spice-vdagentd.enable = true;
     ipp-usb.enable = true;
-    libinput.enable = true
+    libinput.enable = true;
+    gvfs.enable = true;
+    flatpak.enable = false;
+    fstrim.enable = true;
+
     xserver = {
       enable = false;
       xkb = {
@@ -26,4 +30,12 @@
       };
     };
   };
+
+  systemd.services.flatpak-repo = {
+    path = [ pkgs.flatpak ];
+    script = ''
+      flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    '';
+  };
+
 }

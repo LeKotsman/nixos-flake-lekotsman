@@ -18,13 +18,15 @@
   programs = {
     firefox.enable = true;
     brave.enable = true;
+
     hyprland = {
       enable = true;
-
       xwayland = {
         enable = true;
       };
       portalPackage = pkgs.xdg-desktop-portal-hyprland;
+
+    };
     
     thunar = {
       enable = true;
@@ -34,7 +36,6 @@
       ];
     };
 
-    };
     zsh.enable = true;
   };
 }

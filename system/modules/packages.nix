@@ -33,6 +33,8 @@
     wget
     curl
     xfce.thunar
+    xfce.thunar-archive-plugin
+    xfce.thunar-volman
     xdg-desktop-portal-gtk
     hyprpicker
     xdg-desktop-portal-wlr
@@ -66,5 +68,8 @@
     nwg-look
     firefox
     brave
+    sbctl
+    polkit
+    polkit_gnome
   ];
 }
