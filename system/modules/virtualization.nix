@@ -1,7 +1,7 @@
 { pkgs, ... }: 
 
 {
-  virtualization = {
+  virtualisation = {
     spiceUSBRedirection.enable = true;
 
     libvirtd = {
@@ -23,14 +23,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    podman-compose
-    qemu
-    spice
-    spice-gtk
-    spice-protocol
-    virt-manager
-    virt-viewer
-    win-spice
-    win-virtio  
+
   ];
 }

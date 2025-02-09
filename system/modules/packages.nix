@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
-{
+{ 
+  nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     bat
     btop
@@ -14,14 +15,56 @@
     neovim
     tldr
     unzip
+    hyprpaper
+    kitty
+    libnotify
+    mako
+    qt5.qtwayland
+    libvirt
+    qt6.qtwayland
+    swayidle
+    swaylock-effects
+    wlogout
+    wl-clipboard
+    wofi
+    waybar
     openssl
     openssl.dev
     wget
     curl
     xfce.thunar
     xdg-desktop-portal-gtk
+    hyprpicker
     xdg-desktop-portal-wlr
+    brightnessctl
     zip
     zoxide
+    tree
+    neovide
+    greetd.tuigreet
+    meson
+    ninja
+    swappy
+    podman-compose
+    swww
+    grim
+    file-roller
+    swaynotificationcenter
+    pamixer
+    pavucontrol
+    qemu
+    spice
+    spice-gtk
+    spice-protocol
+    virt-manager
+    virt-viewer
+    win-spice
+    win-virtio  
+    adwaita-icon-theme
+    glib 
+    gsettings-desktop-schemas
+    nwg-look
+    firefox
+    brave
   ];
 }

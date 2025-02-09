@@ -4,7 +4,8 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
-  outputs = inputs@{ self, nixpkgs, ... }: {
+  outputs = { self, nixpkgs, ... }@inputs: 
+  {
     nixosConfigurations.lektNixNB = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
